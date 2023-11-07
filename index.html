@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | News homepage</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <script
+      src="https://kit.fontawesome.com/884ad5ae23.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body class="bg-GrayishBlue">
+    <!--Navigation section-->
+    <nav class="container p-6 mx-auto">
+      <!--Nav container-->
+      <div class="container flex items-center justify-between">
+        <!--logo-->
+        <div>
+          <img src="./assets/images/logo.svg" alt="logo" class="h-8" />
+        </div>
+
+        <!--Nav items-->
+        <div id="menu" class="hidden justify-beween gap-x-8 md:flex">
+          <!--menu items-->
+          <a href="/" class="hover:border-b-2">Home</a>
+          <a href="/" class="hover:border-b-2">New</a>
+          <a href="/" class="hover:border-b-2">Popular</a>
+          <a href="/" class="hover:border-b-2">Trending</a>
+          <a href="/" class="hover:border-b-2">Categories</a>
+
+          <!--close btn-->
+          <div
+            id="close-btn"
+            class="block absolute top-6 right-10 cursor-pointer md:hidden"
+          >
+            <i class="fa-solid fa-x fa-2x"></i>
+          </div>
+        </div>
+
+        <!--Hamburger menu-->
+        <div id="open-btn" class="cursor-pointer md:hidden">
+          <i class="fa-solid fa-bars fa-2x"></i>
+        </div>
+      </div>
+    </nav>
+
+    <!--main section-->
+
+    <main class="px-6 mx-auto">
+      <div
+        class="container grid grid-cols-1 gap-y-6 mx-auto md:grid-cols-3 md:grid-rows-3 md:gap-5 xl:h-[500px]"
+      >
+        <!--mobile hero image-->
+        <div class="mx-auto md:hidden">
+          <img src="./assets/images/image-web-3-mobile.jpg" alt="web-3-image" />
+        </div>
+
+        <!--Desktop hero image-->
+        <div id="hero-img" class="hidden md:block bg-darkGrayishBlue">
+          <img
+            src="./assets/images/image-web-3-desktop.jpg"
+            alt=""
+            class="object-cover h-full xl:object-fill w-full"
+          />
+        </div>
+
+        <!--Hero message-->
+        <div class="mx-auto">
+          <h1 class="w-full text-5xl font-bold">
+            The Bright future of web 3.0?
+          </h1>
+        </div>
+
+        <!-- secondary hero message -->
+        <div class="container flex flex-col gap-y-6 justify-between-mx-auto">
+          <p class="tracking-wider">
+            We dive into the next evolution of the web that claims to put the
+            power of the platforms back into the hands of the people. But is it
+            really fulfilling its promise?
+          </p>
+
+          <!--button-->
+          <a
+            href="/"
+            class="bg-softRed w-32 text-center text-offWhite text-xs px-5 py-3 tracking-widest shadow-lg mb-8 md:mb-0"
+            >READ MORE</a
+          >
+        </div>
+
+        <!--New section-->
+        <div
+          id="New"
+          class="container flex flex-col gap-y-3 bg-veryDarkBlue text-offWhite p-6"
+        >
+          <!--new item1-->
+          <a href="/" class="flex flex-col gap-y-2 border-b-2 pb-5">
+            <h1 class="text-softOrangebuild font-bold text-2xl mb-3">New</h1>
+            <h2 class="font-bold text-xl">Hydrogen VS Electric Cars</h2>
+            <p class="text-sm leading-7">
+              Will hydrogen-fueled cars ever catch up to EVs?
+            </p>
+          </a>
+
+          <!--new item 2-->
+          <a href="/" class="flex flex-col gap-y-2 border-b-2 py-5">
+            <h2 class="font-bold text-xl">The Downsides of AI Artistry</h2>
+            <p class="text-sm leading-7">
+              What are the possible adverse effects of on-demand AI image
+              generation?
+            </p>
+          </a>
+
+          <!--New item 3-->
+          <a href="/" class="flex flex-col gap-y-2 pt-4">
+            <h2>Is VC Funding Drying Up?</h2>
+            <p class="text-sm leading-7">
+              Private funding by VC firms is down 50% YOY. We take a look at
+              what that means.
+            </p>
+          </a>
+        </div>
+      </div>
+
+      <!--list items-->
+
+      <div class="flex flex-col container mx-auto my-14 gap-y-6 md:grid md:grid-cols-2 lg:grid lg:grid-cols-3 gap-x-6">
+        <!--item 1-->
+        <div class="container flex  gap-x-5 ">
+          <!--img-->
+          <div class="h-full">
+            <img
+              src="./assets/images/image-retro-pcs.jpg"
+              alt=""
+              class="h-36 w-32"
+            />
+          </div>
+
+          <!--message-->
+          <div class="flex flex-col justify-between flex-1  ">
+            <h1 class="font-bold text-darkGrayishBlue text-2xl">01</h1>
+            <h2 class="font-bold text-lg">Reviving Retro PCs</h2>
+            <p class="text-darkGrayishBlue text-sm">
+              What happens when old PCs are given modern up grades?
+            </p>
+          </div>
+        </div>
+
+        <!--item 2-->
+        <div class="container flex  gap-x-5">
+          <!--img-->
+          <div>
+            <img
+              src="./assets/images/image-top-laptops.jpg"
+              alt=""
+              class="h-36 w-32"
+            />
+          </div>
+
+          <!--message-->
+          <div class="flex flex-col justify-between flex-1">
+            <h1 class="font-bold text-darkGrayishBlue text-2xl">02</h1>
+            <h2 class="font-semibold text-lg">Top 10 Laptops of 2022</h2>
+            <p class="text-darkGrayishBlue text-sm left-10">
+              Our best picks for various needs and Budgets
+            </p>
+          </div>
+        </div>
+
+        <!--item 3-->
+        <div class="container flex  gap-x-5">
+          <!--img-->
+          <div>
+            <img
+              src="./assets/images/image-gaming-growth.jpg"
+              alt=""
+              class="h-36 w-32"
+            />
+          </div>
+
+          <!--message-->
+          <div class="flex flex-col justify-between flex-1">
+            <h1 class="font-bold text-darkGrayishBlue text-2xl">03</h1>
+            <h2 class="font-semibold text-lg">The Growth of Gaming</h2>
+            <p class="text-darkGrayishBlue text-sm">
+              How the pandemic has sparked fresh opportunities.
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Smith Ekemini</a>.
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
