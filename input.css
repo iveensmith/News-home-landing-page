@@ -9,6 +9,10 @@
   padding: 0;
 }
 
+body {
+  font-family: 'Inter', sans-serif;
+}
+
 @media (max-width: 768px) {
   #menu {
     height: 100vh;
